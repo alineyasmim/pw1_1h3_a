@@ -1,14 +1,12 @@
-function somaNumero(n1, n2, op){
-    let resultado=0;
-    if(op==="c"){
+function calculaNumeros(){
+    let n1 =parseInt(document.getElementById("usuario").value)
+    let n2 = parseInt(document.getElementById("senha").value)
+    let op =document.getElementById("operation").value
+    let resultado 
+    if(op === "+"){
         resultado=(n1+n2)
-        console.table(resultado)
-        return
+        alert("soma: "+n1+" "+op+" "+n2+" ="+resultado)
     }
 
-    if(op==="a"){
-        resultado=(n1 - n2)
-        alert(resultado)
-        return
-    }
+    alert("soma: "+n1+" "+op+" "+n2+" ="+resultado)
 }
